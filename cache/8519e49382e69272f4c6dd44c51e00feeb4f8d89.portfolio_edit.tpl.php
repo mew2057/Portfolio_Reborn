@@ -1,27 +1,27 @@
-<?php /*%%SmartyHeaderCode:19741543f340a8baa18-41316083%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:6312543f3c59add9a6-95301347%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '4bcb6a997dd897f6a9b49bb23951f24b380161bc' => 
+    '8519e49382e69272f4c6dd44c51e00feeb4f8d89' => 
     array (
-      0 => '.\\templates\\portfolio.tpl',
-      1 => 1413427931,
+      0 => '.\\templates\\portfolio_edit.tpl',
+      1 => 1413427909,
       2 => 'file',
     ),
     '50da811edd0e07e65507282cf2fea5e9d6f55598' => 
     array (
       0 => '.\\templates\\base.tpl',
-      1 => 1413431119,
+      1 => 1413430282,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '19741543f340a8baa18-41316083',
-  'cache_lifetime' => 3600,
-  'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_543f3f8d349505_45746455',
+  'nocache_hash' => '6312543f3c59add9a6-95301347',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.17',
+  'unifunc' => 'content_543f3c59bc8b36_02672557',
+  'cache_lifetime' => 3600,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_543f3f8d349505_45746455')) {function content_543f3f8d349505_45746455($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_543f3c59bc8b36_02672557')) {function content_543f3c59bc8b36_02672557($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -64,8 +64,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class="entry_portfolio"><div class="entry_header_portfolio"><div class="image"><a href="entry.php?id=10"><img alt=FlynnOs height="256" src=assets/FlynnOs/small.png width="256"></a></div><div class="title"><a href="entry.php?id=10">FlynnOs</a></div><div class="details"><table><tr><td>Project Type:</td><td>Operating System</td></tr><tr><td>Platform:</td><td>HTML5 Canvas</td></tr></table></div></div></div>
 		<div class="entry_portfolio"><div class="entry_header_portfolio"><div class="image"><a href="entry.php?id=11"><img alt=JohnGen height="256" src=assets/JohnGen/small.png width="256"></a></div><div class="title"><a href="entry.php?id=11">JohnGen</a></div><div class="details"><table><tr><td>Project Type:</td><td>Complete</td></tr><tr><td>Platform:</td><td>PC</td></tr></table></div></div></div>
 		<div class="entry_portfolio"><div class="entry_header_portfolio"><div class="image"><a href="entry.php?id=12"><img alt=Gene Runner height="256" src=Assets/GeneRunner/small.png width="256"></a></div><div class="title"><a href="entry.php?id=12">Gene Runner</a></div><div class="details"><table><tr><td>Project Type:</td><td>Complete</td></tr><tr><td>Platform:</td><td>HTML5</td></tr></table></div></div></div>
-		<div class="entry_portfolio"><div class="entry_header_portfolio"><div class="image"><a href="entry.php?id=13"><img alt=Capstone height="256" src=*Insert Content Here*/small.png width="256"></a></div><div class="title"><a href="entry.php?id=13">Capstone</a></div><div class="details"><table><tr><td>Project Type:</td><td>*Insert Content Here*</td></tr><tr><td>Platform:</td><td>*Insert Content Here*</td></tr></table></div></div></div>
-	</div>
+		<div class="entry_portfolio">
+			<div class="entry_header_portfolio">	
+				<form method="POST" action="update.php">
+				
+				<input type="submit" name="create" value="create"/>
+				</form>
+			</div>
+		</div>
+
+</div>
 				
 			</div>		
 			<div class="footer">

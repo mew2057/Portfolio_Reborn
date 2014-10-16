@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2014-10-16 04:58:34
+<?php /* Smarty version Smarty-3.1.17, created on 2014-10-16 05:32:44
          compiled from ".\templates\entry_edit.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:31597543f345addfc16-95575224%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,13 +7,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4249f0a4e97916e6163a905f622981f06c14463c' => 
     array (
       0 => '.\\templates\\entry_edit.tpl',
-      1 => 1413422560,
+      1 => 1413428797,
       2 => 'file',
     ),
     '50da811edd0e07e65507282cf2fea5e9d6f55598' => 
     array (
       0 => '.\\templates\\base.tpl',
-      1 => 1413415511,
+      1 => 1413430282,
       2 => 'file',
     ),
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.17',
   'unifunc' => 'content_543f345ae79818_07049578',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_543f345ae79818_07049578')) {function content_543f345ae79818_07049578($_smarty_tpl) {?><!DOCTYPE html>
 <html>
@@ -65,8 +65,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         </ul>       
     </div>
 	<div id= "content_area">
-		<div id = "left_sidebar" class = "sidebar"></div>
-		<div id = "right_sidebar" class = "sidebar"> </div>	
+		<div id = "left_sidebar" class = "sidebar">
+		</div>
+		<div id = "right_sidebar" class = "sidebar">			
+		</div>	
 		<div id="mainBody" class="content">
 			<div id="content_box">
 				
@@ -87,7 +89,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<form method="post" action="update.php">
 		<input type="hidden" name="id" value=<?php echo $_smarty_tpl->tpl_vars['entry']->value['id'];?>
  />
-
 		<table>
 			<tr><td>Title:</td><td> <textarea name="Name"><?php echo $_smarty_tpl->tpl_vars['entry']->value['Name'];?>
 </textarea> </td></tr>

@@ -21,8 +21,10 @@
         </ul>       
     </div>
 	<div id= "content_area">
-		<div id = "left_sidebar" class = "sidebar"></div>
-		<div id = "right_sidebar" class = "sidebar"> </div>	
+		<div id = "left_sidebar" class = "sidebar">
+		</div>
+		<div id = "right_sidebar" class = "sidebar">			
+		</div>	
 		<div id="mainBody" class="content">
 			<div id="content_box">
 				{block name=mainBody}Default Body{/block}				

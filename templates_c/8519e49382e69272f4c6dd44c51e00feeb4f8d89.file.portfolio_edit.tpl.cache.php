@@ -1,32 +1,31 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2014-10-16 05:46:21
-         compiled from ".\templates\portfolio.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:19741543f340a8baa18-41316083%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.17, created on 2014-10-16 05:32:41
+         compiled from ".\templates\portfolio_edit.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:6312543f3c59add9a6-95301347%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '4bcb6a997dd897f6a9b49bb23951f24b380161bc' => 
+    '8519e49382e69272f4c6dd44c51e00feeb4f8d89' => 
     array (
-      0 => '.\\templates\\portfolio.tpl',
-      1 => 1413427931,
+      0 => '.\\templates\\portfolio_edit.tpl',
+      1 => 1413427909,
       2 => 'file',
     ),
     '50da811edd0e07e65507282cf2fea5e9d6f55598' => 
     array (
       0 => '.\\templates\\base.tpl',
-      1 => 1413431119,
+      1 => 1413430282,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '19741543f340a8baa18-41316083',
+  'nocache_hash' => '6312543f3c59add9a6-95301347',
   'function' => 
   array (
   ),
-  'cache_lifetime' => 3600,
-  'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_543f340a9485a6_71960900',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.17',
+  'unifunc' => 'content_543f3c59b73497_50552215',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_543f340a9485a6_71960900')) {function content_543f340a9485a6_71960900($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_543f3c59b73497_50552215')) {function content_543f3c59b73497_50552215($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -71,6 +70,15 @@ $_smarty_tpl->tpl_vars['entry']->_loop = true;
 </td></tr><tr><td>Platform:</td><td><?php echo $_smarty_tpl->tpl_vars['entry']->value['Platform'];?>
 </td></tr></table></div></div></div>
 	<?php } ?>
+	<div class="entry_portfolio">
+			<div class="entry_header_portfolio">	
+				<form method="POST" action="update.php">
+				
+				<input type="submit" name="create" value="create"/>
+				</form>
+			</div>
+		</div>
+
 </div>
 				
 			</div>		

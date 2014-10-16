@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2014-10-16 04:57:25
+<?php /* Smarty version Smarty-3.1.17, created on 2014-10-16 05:33:07
          compiled from ".\templates\entry.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:429543f341536bd78-06887024%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -13,7 +13,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '50da811edd0e07e65507282cf2fea5e9d6f55598' => 
     array (
       0 => '.\\templates\\base.tpl',
-      1 => 1413415511,
+      1 => 1413430282,
       2 => 'file',
     ),
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.17',
   'unifunc' => 'content_543f3415433c57_71070713',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_543f3415433c57_71070713')) {function content_543f3415433c57_71070713($_smarty_tpl) {?><!DOCTYPE html>
 <html>
@@ -65,8 +65,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         </ul>       
     </div>
 	<div id= "content_area">
-		<div id = "left_sidebar" class = "sidebar"></div>
-		<div id = "right_sidebar" class = "sidebar"> </div>	
+		<div id = "left_sidebar" class = "sidebar">
+		</div>
+		<div id = "right_sidebar" class = "sidebar">			
+		</div>	
 		<div id="mainBody" class="content">
 			<div id="content_box">
 				
