@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2014-10-16 14:32:22
+<?php /* Smarty version Smarty-3.1.17, created on 2014-10-16 16:29:33
          compiled from ".\templates\portfolio.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:19741543f340a8baa18-41316083%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -13,7 +13,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '50da811edd0e07e65507282cf2fea5e9d6f55598' => 
     array (
       0 => '.\\templates\\base.tpl',
-      1 => 1413462248,
+      1 => 1413469760,
       2 => 'file',
     ),
   ),
@@ -43,8 +43,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <body>
 	<div id="header">        
         <ul>
-            <li id="home"><a href ="index.php">About</a></li>
-            <li id="portfolio"><a href ="portfolio.php">Portfolio</a></li>
+            <li id="home"><a href ="about.php">About</a></li>
+            <li id="portfolio"><a href ="index.php">Portfolio</a></li>
             <li id="blog"><a href="http://www.johndunhamgames.com/blog">Blog</a></li>
         </ul>       
     </div>

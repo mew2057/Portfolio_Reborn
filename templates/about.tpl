@@ -1,6 +1,8 @@
 ﻿{extends file="base.tpl"}
 {block name=title}About{/block}
 {block name=mainBody}
+
+<!--	
 <div class="entry">
     <div class="entry_header">
 	<div class="index_title">John Dunham</div>
@@ -33,8 +35,7 @@
 		</div>
 {/strip}
 {/foreach}
-
-<!--	
+-->
 <div class="entry">
     <div class="entry_header">
         <div class="title">Welcome to my portfolio site!</div>
@@ -47,5 +48,5 @@
 	
 	<p> If you see a project that doesn't have public code, but you want to check it out feel free to email me at <a href="mailto:john@johndunhamgames.com">john@johndunhamgames.com</a>. I'd be more than happy to share.</p>
 
-</div>-->
+</div>
 {/block}

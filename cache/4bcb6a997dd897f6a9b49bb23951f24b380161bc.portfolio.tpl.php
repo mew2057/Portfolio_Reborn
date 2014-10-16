@@ -11,17 +11,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '50da811edd0e07e65507282cf2fea5e9d6f55598' => 
     array (
       0 => '.\\templates\\base.tpl',
-      1 => 1413462248,
+      1 => 1413469760,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '19741543f340a8baa18-41316083',
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_543fd515218531_19675528',
+  'unifunc' => 'content_543fd64d798670_31015113',
   'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_543fd515218531_19675528')) {function content_543fd515218531_19675528($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_543fd64d798670_31015113')) {function content_543fd64d798670_31015113($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -38,8 +38,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <body>
 	<div id="header">        
         <ul>
-            <li id="home"><a href ="index.php">About</a></li>
-            <li id="portfolio"><a href ="portfolio.php">Portfolio</a></li>
+            <li id="home"><a href ="about.php">About</a></li>
+            <li id="portfolio"><a href ="index.php">Portfolio</a></li>
             <li id="blog"><a href="http://www.johndunhamgames.com/blog">Blog</a></li>
         </ul>       
     </div>

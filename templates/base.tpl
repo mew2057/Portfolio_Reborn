@@ -15,8 +15,8 @@
 <body>
 	<div id="header">        
         <ul>
-            <li id="home"><a href ="index.php">About</a></li>
-            <li id="portfolio"><a href ="portfolio.php">Portfolio</a></li>
+            <li id="home"><a href ="about.php">About</a></li>
+            <li id="portfolio"><a href ="index.php">Portfolio</a></li>
             <li id="blog"><a href="http://www.johndunhamgames.com/blog">Blog</a></li>
         </ul>       
     </div>
