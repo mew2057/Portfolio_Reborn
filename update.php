@@ -1,23 +1,8 @@
 ﻿<?php
 $db = new SQLite3('db/portfolioEntries.sqlite3');
-
-$authenticator = '';
-
-function authenticate() {
-    header('WWW-Authenticate: Basic realm="Nothing"');
-    header('HTTP/1.0 401 Unauthorized');
-    echo "You must enter a valid login ID and password to access this resource\n";
-    exit;
-}
-
-if ( ( !isset( $_SERVER["PHP_AUTH_USER"] )) || (!isset($_SERVER["PHP_AUTH_PW"]))  
-    || !( password_verify($_SERVER["PHP_AUTH_PW"], $authenticator) ) ) { 
-    header( 'WWW-Authenticate: Basic realm="Private"' ); 
-    header( 'HTTP/1.0 401 Unauthorized' ); 
-    echo 'Authorization Required.'; 
-    exit; 
-
-} 
+include('Smarty.class.php');
+$smarty = new Smarty;
+$smarty->clearAllCache();
 
 if(isset($_POST['entry']))
 {

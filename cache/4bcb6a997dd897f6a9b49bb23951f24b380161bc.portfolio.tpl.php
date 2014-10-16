@@ -18,10 +18,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'nocache_hash' => '19741543f340a8baa18-41316083',
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_543fbad6a29b11_42839938',
+  'unifunc' => 'content_543fd515218531_19675528',
   'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_543fbad6a29b11_42839938')) {function content_543fbad6a29b11_42839938($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_543fd515218531_19675528')) {function content_543fd515218531_19675528($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -63,8 +63,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class="entry_portfolio"><div class="entry_header_portfolio"><div class="image"><a href="entry.php?id=9"><img alt=Maptals height="256" src=assets/Maptals/small.png width="256"></a></div><div class="title"><a href="entry.php?id=9">Maptals</a></div><div class="details"><table><tr><td>Project Type:</td><td>Tool</td></tr><tr><td>Platform:</td><td>Any device that can run C++</td></tr></table></div></div></div>
 		<div class="entry_portfolio"><div class="entry_header_portfolio"><div class="image"><a href="entry.php?id=10"><img alt=FlynnOs height="256" src=assets/FlynnOs/small.png width="256"></a></div><div class="title"><a href="entry.php?id=10">FlynnOs</a></div><div class="details"><table><tr><td>Project Type:</td><td>Operating System</td></tr><tr><td>Platform:</td><td>HTML5 Canvas</td></tr></table></div></div></div>
 		<div class="entry_portfolio"><div class="entry_header_portfolio"><div class="image"><a href="entry.php?id=11"><img alt=JohnGen height="256" src=assets/JohnGen/small.png width="256"></a></div><div class="title"><a href="entry.php?id=11">JohnGen</a></div><div class="details"><table><tr><td>Project Type:</td><td>Complete</td></tr><tr><td>Platform:</td><td>PC</td></tr></table></div></div></div>
-		<div class="entry_portfolio"><div class="entry_header_portfolio"><div class="image"><a href="entry.php?id=12"><img alt=Gene Runner height="256" src=Assets/GeneRunner/small.png width="256"></a></div><div class="title"><a href="entry.php?id=12">Gene Runner</a></div><div class="details"><table><tr><td>Project Type:</td><td>Complete</td></tr><tr><td>Platform:</td><td>HTML5</td></tr></table></div></div></div>
-		<div class="entry_portfolio"><div class="entry_header_portfolio"><div class="image"><a href="entry.php?id=13"><img alt=Capstone height="256" src=*Insert Content Here*/small.png width="256"></a></div><div class="title"><a href="entry.php?id=13">Capstone</a></div><div class="details"><table><tr><td>Project Type:</td><td>*Insert Content Here*</td></tr><tr><td>Platform:</td><td>*Insert Content Here*</td></tr></table></div></div></div>
+		<div class="entry_portfolio"><div class="entry_header_portfolio"><div class="image"><a href="entry.php?id=12"><img alt=Gene Runner height="256" src=assets/gene/small.png width="256"></a></div><div class="title"><a href="entry.php?id=12">Gene Runner</a></div><div class="details"><table><tr><td>Project Type:</td><td>Complete</td></tr><tr><td>Platform:</td><td>HTML5</td></tr></table></div></div></div>
+		<div class="entry_portfolio"><div class="entry_header_portfolio"><div class="image"><a href="entry.php?id=13"><img alt=Capstone height="256" src=assets/capstone/small.png width="256"></a></div><div class="title"><a href="entry.php?id=13">Capstone</a></div><div class="details"><table><tr><td>Project Type:</td><td>Ongoing</td></tr><tr><td>Platform:</td><td>PC</td></tr></table></div></div></div>
 	</div>
 				
 			</div>		
