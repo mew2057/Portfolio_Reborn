@@ -1,0 +1,14 @@
+# Use PHP5.4 Single php.ini as default
+AddHandler application/x-httpd-php54s .php
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^penultimategames\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.penultimategames\.com$
+RewriteRule ^/?$ "http\:\/\/portfolio\.johndunhamgames\.com\/" [R=301,L]
+
+
+
+# BEGIN WordPress
+
+# END WordPress
+
