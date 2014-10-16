@@ -1,11 +1,11 @@
-<?php /*%%SmartyHeaderCode:1303543f0872f30dc5-48796144%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:19741543f340a8baa18-41316083%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '4bcb6a997dd897f6a9b49bb23951f24b380161bc' => 
     array (
       0 => '.\\templates\\portfolio.tpl',
-      1 => 1413426195,
+      1 => 1413427931,
       2 => 'file',
     ),
     '50da811edd0e07e65507282cf2fea5e9d6f55598' => 
@@ -15,13 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1303543f0872f30dc5-48796144',
-  'cache_lifetime' => 3600,
-  'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_543f2c16bed152_35397745',
+  'nocache_hash' => '19741543f340a8baa18-41316083',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.17',
+  'unifunc' => 'content_543f340a996380_45987350',
+  'cache_lifetime' => 3600,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_543f2c16bed152_35397745')) {function content_543f2c16bed152_35397745($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_543f340a996380_45987350')) {function content_543f340a996380_45987350($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -61,6 +61,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class="entry_portfolio"><div class="entry_header_portfolio"><div class="image"><a href="entry.php?id=9"><img alt=Maptals height="256" src=assets/Maptals/small.png width="256"></a></div><div class="title"><a href="entry.php?id=9">Maptals</a></div><div class="details"><table><tr><td>Project Type:</td><td>Tool</td></tr><tr><td>Platform:</td><td>Any device that can run C++</td></tr></table></div></div></div>
 		<div class="entry_portfolio"><div class="entry_header_portfolio"><div class="image"><a href="entry.php?id=10"><img alt=FlynnOs height="256" src=assets/FlynnOs/small.png width="256"></a></div><div class="title"><a href="entry.php?id=10">FlynnOs</a></div><div class="details"><table><tr><td>Project Type:</td><td>Operating System</td></tr><tr><td>Platform:</td><td>HTML5 Canvas</td></tr></table></div></div></div>
 		<div class="entry_portfolio"><div class="entry_header_portfolio"><div class="image"><a href="entry.php?id=11"><img alt=JohnGen height="256" src=assets/JohnGen/small.png width="256"></a></div><div class="title"><a href="entry.php?id=11">JohnGen</a></div><div class="details"><table><tr><td>Project Type:</td><td>Complete</td></tr><tr><td>Platform:</td><td>PC</td></tr></table></div></div></div>
+		<div class="entry_portfolio"><div class="entry_header_portfolio"><div class="image"><a href="entry.php?id=12"><img alt=Gene Runner height="256" src=Assets/GeneRunner/small.png width="256"></a></div><div class="title"><a href="entry.php?id=12">Gene Runner</a></div><div class="details"><table><tr><td>Project Type:</td><td>Complete</td></tr><tr><td>Platform:</td><td>HTML5</td></tr></table></div></div></div>
 	</div>
 				
 			</div>		

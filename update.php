@@ -6,6 +6,7 @@ if(isset($_POST['entry']))
 	$id = SQLite3::escapeString($_POST['id']);
 	$Name = SQLite3::escapeString($_POST['Name']);
 	$Images = SQLite3::escapeString($_POST['Images']);
+	$Team = SQLite3::escapeString($_POST['Team']);
 	$Type = SQLite3::escapeString($_POST['Type']);
 	$Platform = SQLite3::escapeString($_POST['Platform']);
 	$Date = SQLite3::escapeString($_POST['Date']);
@@ -16,7 +17,7 @@ if(isset($_POST['entry']))
 	
 	$setQuery = 
 	'UPDATE portfolio 
-	SET Name=\'' . $Name . '\', Images=\'' . $Images . '\', Type=\'' . $Type . '\', Platform=\'' . $Platform . '\', Date=\'' . 
+	SET Name=\'' . $Name . '\', Images=\'' . $Images . '\', Team=\'' . $Team . '\', Type=\'' . $Type . '\', Platform=\'' . $Platform . '\', Date=\'' . 
 		$Date . '\', Links=\'' . $Links . '\', Description=\'' . $Description . '\', Done=\'' . $Done . '\' 
 	WHERE id="' . $id . '"';
 	//$setQuery = str_replace("/","\/",$setQuery);
@@ -25,8 +26,7 @@ if(isset($_POST['entry']))
 	
 	header('Location:entry.php?id='.$id.'&edit');
 }
-
-if(isset($_POST['create']))
+else if(isset($_POST['create']))
 {
 	//$id = 0;//SQLite3::escapeString(htmlspecialchars($_POST['id']));
 	$Name = '*Insert Content Here*';
@@ -39,14 +39,18 @@ if(isset($_POST['create']))
 	$Done = '*Insert Content Here*';
 	
 	$setQuery = 'INSERT INTO portfolio ( Name, Images, Type, Platform, Date, Links, Description, Done )'.
-	'VALUES (\',\'' . $Name . '\',\'' . $Images . '\',\'' . $Type . '\',\'' . $Platform . '\',\'' . 
+	'VALUES (\'' . $Name . '\',\'' . $Images . '\',\'' . $Type . '\',\'' . $Platform . '\',\'' . 
 		$Date . '\',\'' . $Links . '\',\'' . $Description . '\',\'' . $Done . '\') ';
-	echo $setQuery;
+		echo $setQuery;
+	$db->querySingle($setQuery);
 	
-	$alterKey = 'ALTER TABLE portfolio MODIFY COLUMN id INTEGER PRIMARY KEY'
-	 $db->querySingle($alterKey);
+	$ret = $db->querySingle('SELECT * FROM portfolio WHERE Name="' . $Name . '"', true);
+	header('Location:entry.php?id='.$ret['id'].'&edit');
 }
+else if (isset($_POST['index']))
+{
 
+}
 
 
 ?>

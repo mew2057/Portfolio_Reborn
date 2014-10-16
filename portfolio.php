@@ -22,6 +22,7 @@ $smarty->assign('entries', $entries);
 	if( isset( $_GET["edit"] ) )
 	{
 		$smarty->display('portfolio_edit.tpl');
+		
 	}
 	else
 	{
