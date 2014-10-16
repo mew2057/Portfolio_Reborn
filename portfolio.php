@@ -19,7 +19,14 @@ $smarty->caching = true;
 $smarty->assign('entries', $entries);
 
 // display it
-$smarty->display('portfolio.tpl');
+	if( isset( $_GET["edit"] ) )
+	{
+		$smarty->display('portfolio_edit.tpl');
+	}
+	else
+	{
+		$smarty->display('portfolio.tpl');
+	}	
 
-
+$db->close();
 ?>

@@ -22,6 +22,16 @@ if($ret == NULL){
 else{
 	$files = glob($ret['Images'] . '/[0-9]*.{PNG,png,jpeg,jpg,gif}',GLOB_BRACE );
 	$smarty->assign('files', implode(",",$files));
-	$smarty->display('entry.tpl');
+	
+	if( isset( $_GET["edit"] ) )
+	{
+		$smarty->display('entry_edit.tpl');
+	}
+	else
+	{
+		$smarty->display('entry.tpl');
+	}
 }
+
+$db->close();
 ?>
