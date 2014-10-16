@@ -1,7 +1,6 @@
 ﻿{extends file="base.tpl"}
 {block name=title}{$entry.Name}{/block}
 
-
 {block name=scripts}
 	{literal}
 	  <script src="scripts/portfolioGallery.js" type="text/javascript"></script>
@@ -36,6 +35,8 @@
 	<form method="post" action="update.php">
 		<input type="hidden" name="id" value={$entry.id} />
 		<table>
+        	<tr><td>User Name:</td><td> <input name="user" type="text"></input> </td></tr>
+			<tr><td>Password:</td><td> <input name="pass" type="password"></input> </td></tr>
 			<tr><td>Title:</td><td> <textarea name="Name">{$entry.Name}</textarea> </td></tr>
 			<tr><td>Images:</td><td> <textarea name="Images">{$entry.Images}</textarea> </td></tr>
 			<tr><td>Project Type:</td><td> <textarea name="Type">{$entry.Type}</textarea> </td></tr>

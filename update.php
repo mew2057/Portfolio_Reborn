@@ -1,34 +1,30 @@
 ﻿<?php
-$db = new SQLite3('db/portfolioEntries.sqlite3');
+$db = mysql_connect(localhost);
 
-$authenticator = '';
-
-if ( ( !isset( $_SERVER["PHP_AUTH_USER"] )) || (!isset($_SERVER["PHP_AUTH_PW"]))  
-    || !( password_verify($_SERVER["PHP_AUTH_PW"], $authenticator) ) ) { 
-    header( 'WWW-Authenticate: Basic realm="Private"' ); 
-    header( 'HTTP/1.0 401 Unauthorized' ); 
-    echo 'Authorization Required.'; 
-    echo password_hash($_SERVER["PHP_AUTH_PW"],PASSWORD_DEFAULT);
-    exit; 
-
-} 
 
 include('Smarty.class.php');
 $smarty = new Smarty;
 $smarty->clearAllCache();
 
+mysql_connect("localhost", "johndunh_" . $_POST['user'], $_POST['pass'] );
+mysql_select_db("johndunh_portfolio");
+
+if(!mysql_ping ())
+{
+    echo "failed";
+}
 if(isset($_POST['entry']))
 {
-	$id = SQLite3::escapeString($_POST['id']);
-	$Name = SQLite3::escapeString($_POST['Name']);
-	$Images = SQLite3::escapeString($_POST['Images']);
-	$Team = SQLite3::escapeString($_POST['Team']);
-	$Type = SQLite3::escapeString($_POST['Type']);
-	$Platform = SQLite3::escapeString($_POST['Platform']);
-	$Date = SQLite3::escapeString($_POST['Date']);
-	$Links = SQLite3::escapeString($_POST['Links']);
-	$Description = SQLite3::escapeString($_POST['Description']);
-	$Done = SQLite3::escapeString($_POST['Done']);
+	$id = mysql_real_escape_string ($_POST['id']);
+	$Name = mysql_real_escape_string ($_POST['Name']);
+	$Images = mysql_real_escape_string ($_POST['Images']);
+	$Team = mysql_real_escape_string ($_POST['Team']);
+	$Type = mysql_real_escape_string ($_POST['Type']);
+	$Platform = mysql_real_escape_string ($_POST['Platform']);
+	$Date = mysql_real_escape_string ($_POST['Date']);
+	$Links = mysql_real_escape_string ($_POST['Links']);
+	$Description = mysql_real_escape_string ($_POST['Description']);
+	$Done = mysql_real_escape_string ($_POST['Done']);
 	
 	
 	$setQuery = 
@@ -36,7 +32,7 @@ if(isset($_POST['entry']))
 	SET Name=\'' . $Name . '\', Images=\'' . $Images . '\', Team=\'' . $Team . '\', Type=\'' . $Type . '\', Platform=\'' . $Platform . '\', Date=\'' . 
 		$Date . '\', Links=\'' . $Links . '\', Description=\'' . $Description . '\', Done=\'' . $Done . '\' 
 	WHERE id="' . $id . '"';
-	$entry = $db->querySingle($setQuery);
+	mysql_query($setQuery);
 	header('Location:entry.php?id='.$id.'&edit');
 }
 else if(isset($_POST['create']))
@@ -54,9 +50,7 @@ else if(isset($_POST['create']))
 	'VALUES (\'' . $Name . '\',\'' . $Images . '\',\'' . $Type . '\',\'' . $Platform . '\',\'' . 
 		$Date . '\',\'' . $Links . '\',\'' . $Description . '\',\'' . $Done . '\') ';
 		echo $setQuery;
-	$db->querySingle($setQuery);
-	
-	$ret = $db->querySingle('SELECT * FROM portfolio WHERE Name="' . $Name . '"', true);
+	mysql_query($setQuery);
 	header('Location:entry.php?id='.$ret['id'].'&edit');
 }
 else if (isset($_POST['index']))

@@ -2,14 +2,14 @@
 include('Smarty.class.php');
 
 $entries = array();
-$db = new SQLite3('db/portfolioEntries.sqlite3');
 
-$ret = $db->query('SELECT * FROM portfolio');
+mysql_connect("localhost", "johndunh_generic", "password1234");
+mysql_select_db("johndunh_portfolio");
+$ret = mysql_query('SELECT * FROM portfolio');
 
-while($row = $ret->fetchArray(SQLITE3_ASSOC) ){
-	$entries[] = $row;
+while($row = mysql_fetch_assoc($ret)){
+     $entries[] = $row;
 }
-
 // create object
 $smarty = new Smarty;
 $smarty->compile_check = true;
@@ -29,5 +29,5 @@ $smarty->assign('entries', $entries);
 		$smarty->display('portfolio.tpl');
 	}	
 
-$db->close();
+mysql_close();
 ?>

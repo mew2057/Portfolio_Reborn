@@ -1,7 +1,6 @@
 ﻿{extends file="base.tpl"}
 {block name=title}{$entry.Name}{/block}
 
-
 {block name=scripts}
 	{literal}
 	  <script src="scripts/portfolioGallery.js" type="text/javascript"></script>

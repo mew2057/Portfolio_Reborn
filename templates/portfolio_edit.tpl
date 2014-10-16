@@ -25,7 +25,8 @@
 	<div class="entry_portfolio">
 			<div class="entry_header_portfolio">	
 				<form method="POST" action="update.php">
-				
+				User Name:<input name="user" type="text"></input><br/>
+                Password: <input name="pass" type="password"></inpupt><br/>
 				<input type="submit" name="create" value="create"/>
 				</form>
 			</div>
