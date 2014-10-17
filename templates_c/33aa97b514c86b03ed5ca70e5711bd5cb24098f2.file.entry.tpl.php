@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2014-10-17 19:46:44
+<?php /* Smarty version Smarty-3.1.17, created on 2014-10-17 21:29:17
          compiled from ".\templates\entry.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2569354412b842e2646-58949540%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:10273544160e1d4f939-81407821%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -13,19 +13,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '50da811edd0e07e65507282cf2fea5e9d6f55598' => 
     array (
       0 => '.\\templates\\base.tpl',
-      1 => 1413568003,
+      1 => 1413574121,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2569354412b842e2646-58949540',
+  'nocache_hash' => '10273544160e1d4f939-81407821',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_54412b84358409_28473307',
+  'unifunc' => 'content_544160e1db9291_62414381',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54412b84358409_28473307')) {function content_54412b84358409_28473307($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_544160e1db9291_62414381')) {function content_544160e1db9291_62414381($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -64,7 +64,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <nav>
 			<a href ="index.php">Portfolio</a> |
 			<a href ="mailto:john@johndunhamgames.com">Email</a> |
-			<a href ="http://johndunhamgames.com/other/Resume.pdf">Resume</a> |
+			<a href ="http://johndunhamgames.com/other/Dunham_John_Resume.pdf">Resume</a> |
 			<a href ="https://bitbucket.org/mew2057">BitBucket</a> |
 			<a href ="https://www.linkedin.com/in/jfdunham">LinkedIn</a> |
             <a href ="http://www.johndunhamgames.com/blog">Blog</a> 

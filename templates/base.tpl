@@ -20,7 +20,7 @@
         <nav>
 			<a href ="index.php">Portfolio</a> |
 			<a href ="mailto:john@johndunhamgames.com">Email</a> |
-			<a href ="http://johndunhamgames.com/other/Resume.pdf">Resume</a> |
+			<a href ="http://johndunhamgames.com/other/Dunham_John_Resume.pdf">Resume</a> |
 			<a href ="https://bitbucket.org/mew2057">BitBucket</a> |
 			<a href ="https://www.linkedin.com/in/jfdunham">LinkedIn</a> |
             <a href ="http://www.johndunhamgames.com/blog">Blog</a> 

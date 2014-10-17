@@ -1,13 +1,13 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2014-10-17 20:44:20
-         compiled from ".\templates\portfolio.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2682544160e01e5940-25360627%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.17, created on 2014-10-17 20:34:07
+         compiled from ".\templates\portfolio_edit.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:14937544160f82b9347-42375983%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '4bcb6a997dd897f6a9b49bb23951f24b380161bc' => 
+    '8519e49382e69272f4c6dd44c51e00feeb4f8d89' => 
     array (
-      0 => '.\\templates\\portfolio.tpl',
-      1 => 1413571459,
+      0 => '.\\templates\\portfolio_edit.tpl',
+      1 => 1413570846,
       2 => 'file',
     ),
     '50da811edd0e07e65507282cf2fea5e9d6f55598' => 
@@ -17,16 +17,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2682544160e01e5940-25360627',
+  'nocache_hash' => '14937544160f82b9347-42375983',
   'function' => 
   array (
   ),
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_544160e024de95_02451999',
+  'unifunc' => 'content_544160f832ea94_51030328',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_544160e024de95_02451999')) {function content_544160e024de95_02451999($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_544160f832ea94_51030328')) {function content_544160f832ea94_51030328($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -79,10 +79,9 @@ $_smarty_tpl->tpl_vars['entry']->_loop = true;
 </td></tr><tr><td>Platform:</td><td><?php echo $_smarty_tpl->tpl_vars['entry']->value['Platform'];?>
 </td></tr></table></div></div></div>
 	<?php } ?>
-	
 	<div id="divider"></div>
-	
 	<h1>Other Projects</h1>
+
 	<?php  $_smarty_tpl->tpl_vars['entry'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['entry']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['others']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['entry']->key => $_smarty_tpl->tpl_vars['entry']->value) {
@@ -97,6 +96,15 @@ $_smarty_tpl->tpl_vars['entry']->_loop = true;
 </td></tr><tr><td>Platform:</td><td><?php echo $_smarty_tpl->tpl_vars['entry']->value['Platform'];?>
 </td></tr></table></div></div></div>
 	<?php } ?>
+	
+	<div class="entry_portfolio">
+		<form method="POST" action="update.php">
+			User Name:<input name="user" type="text"></input><br/>
+			Password:  <input name="pass" type="password"></inpupt><br/>
+		<input type="submit" name="create" value="create"/>
+		</form>
+	</div>
+
 </div>
 				
 			</div>		

@@ -1,7 +1,4 @@
 ﻿<?php
-$db = mysql_connect(localhost);
-
-
 include('Smarty.class.php');
 $smarty = new Smarty;
 $smarty->clearAllCache();
@@ -9,10 +6,6 @@ $smarty->clearAllCache();
 mysql_connect("localhost", "johndunh_" . $_POST['user'], $_POST['pass'] );
 mysql_select_db("johndunh_portfolio");
 
-if(!mysql_ping ())
-{
-    echo "failed";
-}
 if(isset($_POST['entry']))
 {
 	$id = mysql_real_escape_string ($_POST['id']);
@@ -25,14 +18,15 @@ if(isset($_POST['entry']))
 	$Links = mysql_real_escape_string ($_POST['Links']);
 	$Description = mysql_real_escape_string ($_POST['Description']);
 	$Done = mysql_real_escape_string ($_POST['Done']);
-	
-	
+	$Featured = mysql_real_escape_string ($_POST['Featured']);
+
 	$setQuery = 
 	'UPDATE portfolio 
 	SET Name=\'' . $Name . '\', Images=\'' . $Images . '\', Team=\'' . $Team . '\', Type=\'' . $Type . '\', Platform=\'' . $Platform . '\', Date=\'' . 
-		$Date . '\', Links=\'' . $Links . '\', Description=\'' . $Description . '\', Done=\'' . $Done . '\' 
+		$Date . '\', Links=\'' . $Links . '\', Description=\'' . $Description . '\', Done=\'' . $Done . '\', Featured='. $Featured . ' 
 	WHERE id="' . $id . '"';
 	mysql_query($setQuery);
+	
 	header('Location:entry.php?id='.$id.'&edit');
 }
 else if(isset($_POST['create']))
@@ -49,14 +43,8 @@ else if(isset($_POST['create']))
 	$setQuery = 'INSERT INTO portfolio ( Name, Images, Type, Platform, Date, Links, Description, Done )'.
 	'VALUES (\'' . $Name . '\',\'' . $Images . '\',\'' . $Type . '\',\'' . $Platform . '\',\'' . 
 		$Date . '\',\'' . $Links . '\',\'' . $Description . '\',\'' . $Done . '\') ';
-		echo $setQuery;
 	mysql_query($setQuery);
-	
-	$ret = $db->querySingle('SELECT * FROM portfolio WHERE Name="' . $Name . '"', true);
-	header('Location:entry.php?id='.$ret['id'].'&edit');
-}
-else if (isset($_POST['index']))
-{
 
+	header('Location:index.php');
 }
 ?>

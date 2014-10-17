@@ -74,21 +74,6 @@ body
 	float:left;
 }
 
-#sidebar_details
-{
-	padding-top:10px;
-}
-
-.title#about_name
-{
-	font-size:30px;
-}
-
-#about
-{
-    color:#002000;
-	padding:5%;
-}
 
 /* footer */
 .footer
@@ -158,6 +143,16 @@ body
     overflow: hidden;
 	outline:2px solid #968543;
 }
+#divider
+{
+	height:10px;
+	width:100%;
+	border-bottom:1px solid #968543;
+}
+h1
+{
+	color:#002000;
+}
 
 /* HTML5 Gallery */
 .gallery_div
@@ -189,6 +184,8 @@ body
 	height: 10px
 }
 
+
+
 /* Summary Page */
 .project_header
 {
@@ -200,6 +197,7 @@ body
 	margin-top:0;
 	padding-top:10px;
 }
+
 /* header jazz*/
 #web_name 
 {  
@@ -215,7 +213,6 @@ body
 	font-size:20px; 
 	font-style:italic;
 }
-
 
 #header
 {   

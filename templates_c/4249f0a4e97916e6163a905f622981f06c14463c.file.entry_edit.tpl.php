@@ -1,31 +1,31 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2014-10-17 16:46:16
+<?php /* Smarty version Smarty-3.1.17, created on 2014-10-17 21:15:10
          compiled from ".\templates\entry_edit.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1341054412bb81f3355-19367855%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:9565544160e6496908-50388564%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '4249f0a4e97916e6163a905f622981f06c14463c' => 
     array (
       0 => '.\\templates\\entry_edit.tpl',
-      1 => 1413555754,
+      1 => 1413573220,
       2 => 'file',
     ),
     '50da811edd0e07e65507282cf2fea5e9d6f55598' => 
     array (
       0 => '.\\templates\\base.tpl',
-      1 => 1413555754,
+      1 => 1413568003,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1341054412bb81f3355-19367855',
+  'nocache_hash' => '9565544160e6496908-50388564',
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_54412bb826f599_50362373',
+  'unifunc' => 'content_544160e64fe652_37900585',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54412bb826f599_50362373')) {function content_54412bb826f599_50362373($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_544160e64fe652_37900585')) {function content_544160e64fe652_37900585($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -57,15 +57,21 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       href="favicon.ico">
 </head>  
 <body>
-	<div id="header">        
-        <ul>
-            <li id="home"><a href ="about.php">About</a></li>
-            <li id="portfolio"><a href ="index.php">Portfolio</a></li>
-            <li id="blog"><a href="http://www.johndunhamgames.com/blog">Blog</a></li>
-        </ul>       
+	<div id="web_name">John Dunham <div>A gameplay programmer with a passion for user experience</div></div>
+
+	<div id="header">       
+
+        <nav>
+			<a href ="index.php">Portfolio</a> |
+			<a href ="mailto:john@johndunhamgames.com">Email</a> |
+			<a href ="http://johndunhamgames.com/other/Resume.pdf">Resume</a> |
+			<a href ="https://bitbucket.org/mew2057">BitBucket</a> |
+			<a href ="https://www.linkedin.com/in/jfdunham">LinkedIn</a> |
+            <a href ="http://www.johndunhamgames.com/blog">Blog</a> 
+		</nav> 
     </div>
 	<div id= "content_area">
-		<div id = "left_sidebar" class = "sidebar">
+		<div id = "left_sidebar" class = "sidebar">		
 		</div>
 		<div id = "right_sidebar" class = "sidebar">			
 		</div>	
@@ -92,6 +98,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<table>
         	<tr><td>User Name:</td><td> <input name="user" type="text"></input> </td></tr>
 			<tr><td>Password:</td><td> <input name="pass" type="password"></input> </td></tr>
+			<tr><td>Featured:</td><td> <input type="number" name="Featured" value=<?php echo $_smarty_tpl->tpl_vars['entry']->value['Featured'];?>
+></input> </td></tr>
 			<tr><td>Title:</td><td> <textarea name="Name"><?php echo $_smarty_tpl->tpl_vars['entry']->value['Name'];?>
 </textarea> </td></tr>
 			<tr><td>Images:</td><td> <textarea name="Images"><?php echo $_smarty_tpl->tpl_vars['entry']->value['Images'];?>

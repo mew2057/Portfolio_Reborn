@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2014-10-17 16:25:28
+<?php /* Smarty version Smarty-3.1.17, created on 2014-10-17 20:40:02
          compiled from ".\templates\404.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:30534544126d83e6134-10122459%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:719554416282427110-06277973%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -13,19 +13,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '50da811edd0e07e65507282cf2fea5e9d6f55598' => 
     array (
       0 => '.\\templates\\base.tpl',
-      1 => 1413555754,
+      1 => 1413568003,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '30534544126d83e6134-10122459',
+  'nocache_hash' => '719554416282427110-06277973',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_544126d8468551_42197619',
+  'unifunc' => 'content_54416282477244_48286847',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_544126d8468551_42197619')) {function content_544126d8468551_42197619($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_54416282477244_48286847')) {function content_54416282477244_48286847($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -40,15 +40,21 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       href="favicon.ico">
 </head>  
 <body>
-	<div id="header">        
-        <ul>
-            <li id="home"><a href ="about.php">About</a></li>
-            <li id="portfolio"><a href ="index.php">Portfolio</a></li>
-            <li id="blog"><a href="http://www.johndunhamgames.com/blog">Blog</a></li>
-        </ul>       
+	<div id="web_name">John Dunham <div>A gameplay programmer with a passion for user experience</div></div>
+
+	<div id="header">       
+
+        <nav>
+			<a href ="index.php">Portfolio</a> |
+			<a href ="mailto:john@johndunhamgames.com">Email</a> |
+			<a href ="http://johndunhamgames.com/other/Resume.pdf">Resume</a> |
+			<a href ="https://bitbucket.org/mew2057">BitBucket</a> |
+			<a href ="https://www.linkedin.com/in/jfdunham">LinkedIn</a> |
+            <a href ="http://www.johndunhamgames.com/blog">Blog</a> 
+		</nav> 
     </div>
 	<div id= "content_area">
-		<div id = "left_sidebar" class = "sidebar">
+		<div id = "left_sidebar" class = "sidebar">		
 		</div>
 		<div id = "right_sidebar" class = "sidebar">			
 		</div>	

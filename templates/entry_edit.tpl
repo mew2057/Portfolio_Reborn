@@ -37,6 +37,7 @@
 		<table>
         	<tr><td>User Name:</td><td> <input name="user" type="text"></input> </td></tr>
 			<tr><td>Password:</td><td> <input name="pass" type="password"></input> </td></tr>
+			<tr><td>Featured:</td><td> <input type="number" name="Featured" value={$entry.Featured}></input> </td></tr>
 			<tr><td>Title:</td><td> <textarea name="Name">{$entry.Name}</textarea> </td></tr>
 			<tr><td>Images:</td><td> <textarea name="Images">{$entry.Images}</textarea> </td></tr>
 			<tr><td>Project Type:</td><td> <textarea name="Type">{$entry.Type}</textarea> </td></tr>
