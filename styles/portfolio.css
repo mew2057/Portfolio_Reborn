@@ -74,6 +74,22 @@ body
 	float:left;
 }
 
+#sidebar_details
+{
+	padding-top:10px;
+}
+
+.title#about_name
+{
+	font-size:30px;
+}
+
+#about
+{
+    color:#002000;
+	padding:5%;
+}
+
 /* footer */
 .footer
 {
@@ -143,7 +159,6 @@ body
 	outline:2px solid #968543;
 }
 
-
 /* HTML5 Gallery */
 .gallery_div
 {
@@ -151,9 +166,8 @@ body
 	height: 500px;
 	display:block;
 	position:relative;
-
-
 }
+
 .gallery_spacer
 {
 	padding:0 5px;
@@ -187,58 +201,56 @@ body
 	padding-top:10px;
 }
 /* header jazz*/
-#header
+#web_name 
+{  
+	text-align:center;
+    padding:10px;
+	font-size:40px; 
+	border-bottom: 1px solid #968543;
+	background-color:#E2D8B1;
+	color:#002000;
+}
+#web_name  div
 {
-    width:100%;
-	min-width:566px;	
-    height:46px;
-    margin:auto;   
+	font-size:20px; 
+	font-style:italic;
+}
+
+
+#header
+{   
     background-color:#002000;
     border-bottom: 2px solid #968543;
 	position:relative;
 	z-index:100;
-}
-
-#header ul
-{
-   list-style-type: none; 
-   margin:auto;
-   padding:0;
-   padding-top:12px;
-   text-align: center;
-}
-
-#header ul li
-{
-    display: inline;
-    border-right: 1px solid #968543;
-    border-left: 1px solid #968543;
-}
-
-#header ul li#blog
-{
-    border-right: 0;
-}
-#header ul li#home
-{
-    border-left: 0;
-}
-
-#header ul li a
-{
-    text-decoration: none; 
-    padding: 10px 42px;
+    color:#968543;
     font-family:"helvetica";
     font-size:20px; 
-    color:#968543;
 }
 
-#header ul li a:hover
+
+#header nav
 {
+    padding-top:12px;
+    text-align: center;
+    padding: 10px;
+    
+}
+#header nav a
+{
+    padding-left:1%;
+    padding-right:1%;
+}
+
+#header nav a:hover
+{
+    text-decoration: underline; 
+    background-color:transparent;
+
     color:#ADAA9E;    
 }
 
-#header ul li a:active
+#header nav a:active
 {
     background-color:#F3F0E4;
     color:#968543;

@@ -6,6 +6,6 @@
 		<div class="entry_header">
 			<div class="title">404</div>
 		</div>
-		I'm Sorry but the page you are looking for could not be found.
+		I'm sorry but the page you are looking for could not be found.
 	</div>
 {/block}

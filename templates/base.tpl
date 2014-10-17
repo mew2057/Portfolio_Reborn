@@ -13,16 +13,24 @@
       href="favicon.ico">
 </head>  
 <body>
-	<div id="header">        
-        <ul>
-            <li id="home"><a href ="index.php">About</a></li>
-            <li id="portfolio"><a href ="portfolio.php">Portfolio</a></li>
-            <li id="blog"><a href="http://www.johndunhamgames.com/blog">Blog</a></li>
-        </ul>       
+	<div id="web_name">John Dunham <div>A gameplay programmer with a passion for user experience</div></div>
+
+	<div id="header">       
+
+        <nav>
+			<a href ="index.php">Portfolio</a> |
+			<a href ="mailto:john@johndunhamgames.com">Email</a> |
+			<a href ="http://johndunhamgames.com/other/Resume.pdf">Resume</a> |
+			<a href ="https://bitbucket.org/mew2057">BitBucket</a> |
+			<a href ="https://www.linkedin.com/in/jfdunham">LinkedIn</a> |
+            <a href ="http://www.johndunhamgames.com/blog">Blog</a> 
+		</nav> 
     </div>
 	<div id= "content_area">
-		<div id = "left_sidebar" class = "sidebar"></div>
-		<div id = "right_sidebar" class = "sidebar"> </div>	
+		<div id = "left_sidebar" class = "sidebar">		
+		</div>
+		<div id = "right_sidebar" class = "sidebar">			
+		</div>	
 		<div id="mainBody" class="content">
 			<div id="content_box">
 				{block name=mainBody}Default Body{/block}				

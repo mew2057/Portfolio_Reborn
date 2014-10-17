@@ -2,8 +2,9 @@
 include('Smarty.class.php');
 
 $id = $_GET["id"];
-$db = new SQLite3('db/portfolioEntries.sqlite3');
-$ret = $db->querySingle('SELECT * FROM portfolio WHERE id="' . $id . '"', true);
+mysql_connect("localhost", "johndunh_generic", "password1234");
+mysql_select_db("johndunh_portfolio");
+$ret = mysql_fetch_array(mysql_query('SELECT * FROM portfolio WHERE id="' . $id . '"'));
 
 // create object
 $smarty = new Smarty;
@@ -22,6 +23,16 @@ if($ret == NULL){
 else{
 	$files = glob($ret['Images'] . '/[0-9]*.{PNG,png,jpeg,jpg,gif}',GLOB_BRACE );
 	$smarty->assign('files', implode(",",$files));
-	$smarty->display('entry.tpl');
+	
+	if( isset( $_GET["edit"] ) )
+	{
+		$smarty->display('entry_edit.tpl');
+	}
+	else
+	{
+		$smarty->display('entry.tpl');
+	}
 }
+
+mysql_close();
 ?>
