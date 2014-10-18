@@ -7,12 +7,12 @@
 	  <script>
 		window.onload = function(){
 			updateSidebar();
-			loadImages('{/literal}{$files}{literal}');
+			app.Gallery.loadImages('{/literal}{$files}{literal}');
 		};
 
 		$(window).resize(function(){
 			updateSidebar();
-			resizeGallery();
+			app.Gallery.resizeGallery();
 		});
 	  </script>
   {/literal}

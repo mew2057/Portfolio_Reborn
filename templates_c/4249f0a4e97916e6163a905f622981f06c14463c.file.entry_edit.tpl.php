@@ -1,31 +1,31 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2014-10-17 21:15:10
+<?php /* Smarty version Smarty-3.1.17, created on 2014-10-18 00:55:28
          compiled from ".\templates\entry_edit.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:9565544160e6496908-50388564%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2140354419e60737909-46343176%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '4249f0a4e97916e6163a905f622981f06c14463c' => 
     array (
       0 => '.\\templates\\entry_edit.tpl',
-      1 => 1413573220,
+      1 => 1413585207,
       2 => 'file',
     ),
     '50da811edd0e07e65507282cf2fea5e9d6f55598' => 
     array (
       0 => '.\\templates\\base.tpl',
-      1 => 1413568003,
+      1 => 1413585207,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '9565544160e6496908-50388564',
+  'nocache_hash' => '2140354419e60737909-46343176',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_544160e64fe652_37900585',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.17',
+  'unifunc' => 'content_54419e607e4df7_98624745',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_544160e64fe652_37900585')) {function content_544160e64fe652_37900585($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_54419e607e4df7_98624745')) {function content_54419e607e4df7_98624745($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -64,7 +64,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <nav>
 			<a href ="index.php">Portfolio</a> |
 			<a href ="mailto:john@johndunhamgames.com">Email</a> |
-			<a href ="http://johndunhamgames.com/other/Resume.pdf">Resume</a> |
+			<a href ="http://johndunhamgames.com/other/Dunham_John_Resume.pdf">Resume</a> |
 			<a href ="https://bitbucket.org/mew2057">BitBucket</a> |
 			<a href ="https://www.linkedin.com/in/jfdunham">LinkedIn</a> |
             <a href ="http://www.johndunhamgames.com/blog">Blog</a> 
